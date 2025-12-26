@@ -1,0 +1,13 @@
+n = int(input("Enter size of matrix: "))
+matrix = []
+
+print("Enter matrix elements:")
+for i in range(n):
+    matrix.append(list(map(int, input().split())))
+
+diag_sum = 0
+
+for i in range(n):
+    diag_sum += matrix[i][i]
+
+print("Sum of diagonal elements:", diag_sum)
